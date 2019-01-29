@@ -1,1 +1,0 @@
-{"rsync":{"/vagrant":{"type":"rsync","guestpath":"/vagrant","hostpath":"/Users/damienlust/Dev/vagrant_hosts/centos","disabled":false,"__vagrantfile":true,"owner":"vagrant","group":"vagrant"}}}
