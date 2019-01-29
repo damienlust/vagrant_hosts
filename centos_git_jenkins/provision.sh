@@ -10,3 +10,4 @@ rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 yum install -y jenkins
 yum install -y docker
 systemctl start jenkins
+systemctl start docker
