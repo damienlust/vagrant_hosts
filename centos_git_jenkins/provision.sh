@@ -9,5 +9,13 @@ rpm --import https://jenkins-ci.org/redhat/jenkins-ci.org.key
 
 yum install -y jenkins
 yum install -y docker
+usermod -aG dockerroot jenkins
+echo "{" >>  /etc/docker/daemon.json
+
+echo '"live-restore": true,' >> /etc/docker/daemon.json
+echo '"group": "dockerroot"' >>  /etc/docker/daemon.json
+echo "}" >>  /etc/docker/daemon.json
+
 systemctl start jenkins
 systemctl start docker
+
